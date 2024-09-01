@@ -1,0 +1,193 @@
+<resources>
+    <string name="bottom_courses">Курсы</string>
+    <string name="bottom_libraries">Библиотеки</string>
+    <string name="bottom_chat">Чат</string>
+    <string name="bottom_profile">Профиль</string>
+
+
+    <string name="global_empty_state_text">Тут ничего нет <br /> Зато есть милый котик :)</string>
+
+
+    <string name="screen_name_course_info">Основное</string>
+
+
+    <string name="course_info_module">Модуль</string>
+    <string name="course_info_module_unavailable">Недоступен</string>
+    <string name="course_info_action_resume">Продолжить</string>
+    <string name="course_info_tabs_basic">Основное</string>
+    <string name="course_info_tabs_course_program">Программа курса</string>
+    <string name="course_info_reviews">Отзывы</string>
+    <string name="course_info_certificate">Сертификат об окончании</string>
+
+    <string name="devrush_community">Devrush Community</string>
+
+    <string name="ur_path">Это твой практический путь в мир программирования.</string>
+    <string name="authorization_title">Вход</string>
+    <string name="authorization_enter_your_email">Введите почту</string>
+    <string name="authorization_enter_your_email_placeholder">mail@mail.ru</string>
+    <string name="authorization_password">Пароль</string>
+    <string name="authorization_password_placeholder">Пароль</string>
+    <string name="authorization_enter_button">Войти</string>
+    <string name="authorization_forgot_password">Забыли пароль?</string>
+    <string name="authorization_word_between_divider">или</string>
+    <string name="authorization_enter_by_other_service">Войти через Google</string>
+    <string name="authorization_no_account">У вас еще нет аккаунта? </string>
+    <string name="authorization_button_to_registration">Зарегистрироваться</string>
+    <string name="authorization_error_textField">Неверные логин или пароль</string>
+    <string name="authorization_error_login_textField">Неверный email. Разрешены только цифры и латинские буквы.</string>
+    <string name="authorization_error_password_min_textField">Пароль должен быть длиннее 6 символов</string>
+    <string name="authorization_error_password_max_textField">Пароль должен быть короче 30 символов</string>
+    <string name="authorization_error_password_empty_textField">Пожалуйста, введите ваш пароль</string>
+
+
+    <string name="registration_title">Регистрация</string>
+    <string name="registration_name">Ваше Имя</string>
+    <string name="registration_isErrorEmail">Некоретная почта</string>
+    <string name="registration_isErrorPassword">Пароли не совпадают</string>
+    <string name="registration_enter_reg">Зарегистрироватся</string>
+    <string name="registration_enter_titleRules">Нажимая продолжить вы соглашаетесть с </string>
+    <string name="registration_confidentiality">политикой конфиденциальности</string>
+    <string name="registration_and"> и </string>
+    <string name="registration_server_rules">правилами сервиса</string>
+    <string name="registration_title_authorization">У вас есть аккаунт? </string>
+    <string name="registration_enter_authorization">Войти</string>
+    <string name="registration_enter_we">"Запрещено: использование нецензурной речи в чате, публикация материалов 18+, обсуждение политики. Это важно не только для поддержания положительного эмоционального состояния всего комьюнити, но и для того, чтобы Discord не забанил вас и не накинул нам на сервер страйк. В целом, у нас дружелюбное и адекватное комьюнити, где нет хейта и разных \"подколок\". "Мы не приветствуем негатив. "У нас не просто бокал всегда на половину полон, он на половину полон самым дорогим вином, и мы готовы им делиться . "Каждый участник готов прийти на помощь другому. "Вступая в наше комьюнити, вы берёте на себя ответственность за своё обучение, никто не будет вас насильно тянуть. "</string>
+
+
+
+    <string name="forget_password_">Забыли пароль?</string>
+    <string name="forget_password_enter_the_email">Введите почту</string>
+    <string name="forget_password_placeholder">mail@mail.ru</string>
+    <string name="forget_password_dont_exist">Профиля с такой почтой не существует</string>
+    <string name="forget_password_send">Отправить</string>
+
+    <string name="onboarding_start">Начать</string>
+    <string name="onboarding_team">Команда</string>
+    <string name="onboarding_learn_work_in_team">Научись работать в команде, участвуя в командной разработке, приближенной к коммерческой.</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_portfolio">Портфолио</string>
+    <string name="onboarding_complete_our_training_programs">Проходи наши обучающие программы и добавь минимум 12 работающих приложений в своё портфолио.</string>
+    <string name="onboarding_knowledge_base">База знаний</string>
+    <string name="onboarding_two_years">За два года существования нашего сообщества мы собрали для вас большую базу знаний по изучению программирования.</string>
+
+    <string name="quiz_about_ur_self">Расскажите о себе</string>
+    <string name="quiz_programming_language">Какой язык программирования вы планируете изучать?</string>
+    <string name="quiz_answer_a_few_questions">Ответьте на несколько вопросов. И получите в конце БОНУС!</string>
+
+    <string name="swift">Swift</string>
+    <string name="kotlin">Kotlin</string>
+
+    <string name="quiz_javascript">JavaScript</string>
+    <string name="quiz_choose_framework">Выберите фреймворк?</string>
+    <string name="quiz_uikit">UIKit</string>
+    <string name="quiz_node_js">Node JS</string>
+    <string name="quiz_react">React</string>
+    <string name="quiz_swift_ui">Swift UI</string>
+    <string name="quiz_continue">Продолжить</string>
+    <string name="quiz_back">Назад</string>
+    <string name="quiz_how_long_learn">Как давно вы изучаете данный язык программирования?</string>
+    <string name="quiz_six_month">&lt; 6 месяцев</string>
+    <string name="quiz_more_six_month">&gt; 6 месяцев</string>
+    <string name="quiz_year">&gt; 1 года</string>
+    <string name="quiz_ur_interests">Ваши интересы</string>
+    <string name="quiz_painting">Живопись</string>
+    <string name="quiz_music">Музыка</string>
+    <string name="quiz_fashion">Мода</string>
+    <string name="quiz_cinema">Кино</string>
+    <string name="quiz_exhibitions">Выставки</string>
+    <string name="quiz_art">Искусство</string>
+    <string name="quiz_vocals">Вокал</string>
+    <string name="quiz_quests">Квесты</string>
+    <string name="quiz_sport">Спорт</string>
+    <string name="quiz_dance">Танцы</string>
+    <string name="quiz_end">Завершить</string>
+
+    <string name="coupon_fully">От корки до корки</string>
+    <string name="coupon_course">Вам подходит курс “Пруст, Камю и Сартр: как понять французскую литературу</string>
+    <string name="coupon_15">Мы дарим вам промокод со скидкой 15% на данный курс</string>
+    <string name="coupon_lucky">Попытать удачу</string>
+    <string name="coupon_swipe">Проведите чтобы оторвать билет</string>
+    <string name="coupon_sign_up">Записаться на курс</string>
+    <string name="coupon_skidka15">SKIDKA15</string>
+
+    <string name="list_of_courses_courses">Курсы</string>
+    <string name="list_of_courses_cat">Зато есть милый котик :)</string>
+    <string name="list_of_courses_started_courses">Начатые курсы</string>
+    <string name="list_of_courses">Список курсов</string>
+    <string name="list_of_courses_notifications">Уведомления</string>
+    <string name="list_of_courses_mark_all">Отметить все как прочитанное</string>
+    <string name="list_of_courses_accrual">Начисление по партнерской программе</string>
+    <string name="list_of_courses_sum">Сумма</string>
+    <string name="list_of_courses_link">Ссылка</string>
+    <string name="list_of_courses_referral">Реферал</string>
+
+    <string name="courses_start">Начать</string>
+    <string name="all">Все</string>
+
+    <string name="profile_description">Описание</string>
+    <string name="profile_best_project">Лучший командный проект</string>
+    <string name="profile_best_project_description">Проект сделанный на командном челлендже был выбран лучшим среди всех команд</string>
+    <string name="profile_active_achievements">Активные достижения</string>
+    <string name="profile_all_achievements">Все достижения</string>
+    <string name="profile_inactive_achievements">Не активные достижения</string>
+    <string name="profile_hero">Кино - Герой</string>
+    <string name="profile_mentor">Mentor</string>
+    <string name="profile_mentor_pro">Mentor PRO</string>
+    <string name="profile_top_5">TOP 5</string>
+    <string name="profile_best_report">Лучший доклад</string>
+    <string name="profile">Профиль</string>
+    <string name="profile_my_statistics">Моя статистика</string>
+    <string name="profile_points">Баллы</string>
+    <string name="profile_rank">Место</string>
+    <string name="profile_achievements">Достижения</string>
+    <string name="profile_leader">Командный лидер</string>
+    <string name="profile_reporter">Докладчик</string>
+    <string name="profile_researcher">Ученик исследователь</string>
+    <string name="profile_leaderboard">Таблица лидеров</string>
+    <string name="profile_first_place">1 место</string>
+    <string name="profile_second_place">2 место</string>
+    <string name="profile_third_place">3 место</string>
+    <string name="profile_access_payments">Доступы и оплаты</string>
+    <string name="profile_subscriptions">Подписки</string>
+    <string name="profile_accesses">Доступы</string>
+    <string name="profile_orders">Заказы</string>
+    <string name="profile_settings">Настройки профиля</string>
+    <string name="profile_done">Готово</string>
+    <string name="profile_change_photo">Изменить фото профиля</string>
+    <string name="profile_account">Аккаунт</string>
+    <string name="profile_email">Почта</string>
+    <string name="profile_name">Имя</string>
+    <string name="profile_surname">Фамилия</string>
+    <string name="profile_patronymic">Отчество</string>
+    <string name="profile_phone">Телефон</string>
+    <string name="profile_birth_date">День рождения</string>
+    <string name="profile_gender">Пол</string>
+    <string name="profile_gender_female">Женский</string>
+    <string name="profile_password_settings">Настройки пароля</string>
+    <string name="profile_password">Пароль</string>
+    <string name="profile_confirm_password">Подтвердите пароль</string>
+    <string name="profile_app_settings">Настройки приложения</string>
+    <string name="profile_news_updates_promotions">Новости, анонсы, акции</string>
+    <string name="profile_dark_theme">Темная тема</string>
+    <string name="profile_logout">Выйти</string>
+    <string name="profile_delete_account">Удалить аккаунт</string>
+    <string name="profile_cat">Тут ничего нет. Зато есть милый котик ;)</string>
+    <string name="profile_active">Активные</string>
+    <string name="profile_expired">Истекшие</string>
+    <string name="profile_renew_subscription">Продлить подписку</string>
+    <string name="profile_cancel_subscription">Отменить подписку</string>
+    <string name="profile_order_amount">Сумма заказа: </string>
+    <string name="profile_pay_order">Оплатить заказ</string>
+    <string name="profile_empty_leaderboard">Таблица лидеров пуста</string>
+    <string name="profile_amount_of_payment">Сумма платежа</string>
+
+    <string name="library">Библиотека</string>
+
+    <string name="chat">Чат</string>
+
+    <string name="courses_courses">Курсы</string>
+    <string name="courses_started_courses">Начатые курсы</string>
+    <string name="courses_list_courses">Список курсов</string>
+    <string name="courses_search">Поиск</string>
+</resources>

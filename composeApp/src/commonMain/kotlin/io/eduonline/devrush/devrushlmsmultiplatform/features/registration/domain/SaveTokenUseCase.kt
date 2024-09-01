@@ -1,0 +1,3 @@
+package io.eduonline.devrush.devrushlmsmultiplatform.features.registration.domain
+
+class SaveTokenUseCase

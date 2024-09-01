@@ -1,0 +1,6 @@
+package io.eduonline.devrush.devrushlmsmultiplatform.domain.network.devrushApi.modules.student.models.updateSubscription
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+class UpdateSubscriptionResponse

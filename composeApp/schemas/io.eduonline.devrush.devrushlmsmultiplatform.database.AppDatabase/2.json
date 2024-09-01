@@ -1,0 +1,554 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "f613cb0860d39c1d5cae8c7b5d1c5bb8",
+    "entities": [
+      {
+        "tableName": "courses",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `title` TEXT NOT NULL, `shortDescription` TEXT NOT NULL, `primaryImageCloudKey` TEXT, `freeAccess` INTEGER NOT NULL, `studentHasAccess` INTEGER NOT NULL, `isCompleteAnyCourseRequirement` INTEGER NOT NULL, `studentCourse` TEXT NOT NULL, `studentAccessDate` TEXT, `categories` TEXT NOT NULL, `softDeleted` INTEGER NOT NULL, `softDeletedDate` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shortDescription",
+            "columnName": "shortDescription",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "primaryImageCloudKey",
+            "columnName": "primaryImageCloudKey",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "freeAccess",
+            "columnName": "freeAccess",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "studentHasAccess",
+            "columnName": "studentHasAccess",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isCompleteAnyCourseRequirement",
+            "columnName": "isCompleteAnyCourseRequirement",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "studentCourse",
+            "columnName": "studentCourse",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "studentAccessDate",
+            "columnName": "studentAccessDate",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "categories",
+            "columnName": "categories",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "softDeleted",
+            "columnName": "softDeleted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "softDeletedDate",
+            "columnName": "softDeletedDate",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "library",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `title` TEXT, `shortDescription` TEXT NOT NULL, `freeAccess` INTEGER NOT NULL, `primaryImageCloudKey` TEXT, `studentHasAccess` INTEGER NOT NULL, `studentAccessDate` TEXT, `flowBeginDate` TEXT, `categories` TEXT NOT NULL, `softDeleted` INTEGER NOT NULL, `softDeletedDate` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "shortDescription",
+            "columnName": "shortDescription",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "freeAccess",
+            "columnName": "freeAccess",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "primaryImageCloudKey",
+            "columnName": "primaryImageCloudKey",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "studentHasAccess",
+            "columnName": "studentHasAccess",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "studentAccessDate",
+            "columnName": "studentAccessDate",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "flowBeginDate",
+            "columnName": "flowBeginDate",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "categories",
+            "columnName": "categories",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "softDeleted",
+            "columnName": "softDeleted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "softDeletedDate",
+            "columnName": "softDeletedDate",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "notification",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `type` TEXT NOT NULL, `payloadJson` TEXT NOT NULL, `createdDate` TEXT NOT NULL, `seenDate` TEXT, `studentId` TEXT, `adminId` TEXT, `adminTaskId` TEXT, `courseItemId` TEXT, `libraryItemId` TEXT, `orderId` TEXT, `orderPaymentId` TEXT, `scenarioId` TEXT, `chatConversationId` TEXT, `courseId` TEXT, `libraryId` TEXT, `courseItemTaskId` TEXT, `schoolContentItemCommentId` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "payloadJson",
+            "columnName": "payloadJson",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdDate",
+            "columnName": "createdDate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "seenDate",
+            "columnName": "seenDate",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "studentId",
+            "columnName": "studentId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "adminId",
+            "columnName": "adminId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "adminTaskId",
+            "columnName": "adminTaskId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "courseItemId",
+            "columnName": "courseItemId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "libraryItemId",
+            "columnName": "libraryItemId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "orderId",
+            "columnName": "orderId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "orderPaymentId",
+            "columnName": "orderPaymentId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "scenarioId",
+            "columnName": "scenarioId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "chatConversationId",
+            "columnName": "chatConversationId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "courseId",
+            "columnName": "courseId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "libraryId",
+            "columnName": "libraryId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "courseItemTaskId",
+            "columnName": "courseItemTaskId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "schoolContentItemCommentId",
+            "columnName": "schoolContentItemCommentId",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "profile",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `email` TEXT NOT NULL, `firstName` TEXT NOT NULL, `middleName` TEXT, `lastName` TEXT, `phone` TEXT, `lang` TEXT NOT NULL, `gender` TEXT NOT NULL, `birthday` TEXT, `bonusBalance` REAL NOT NULL, `isEmailConfirmed` INTEGER NOT NULL, `isSchoolEmailConfirmed` INTEGER NOT NULL, `emailConfirmationSentDate` TEXT, `isPhoneConfirmed` INTEGER NOT NULL, `phoneConfirmationSentDate` TEXT, `needChangePassword` INTEGER NOT NULL, `isAdmin` INTEGER NOT NULL, `concurrencyStamp` TEXT NOT NULL, `roles` TEXT NOT NULL, `school` TEXT NOT NULL, `avatar` TEXT, `session` TEXT NOT NULL, `chatUserData` TEXT NOT NULL, `tags` TEXT NOT NULL, `groups` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "firstName",
+            "columnName": "firstName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "middleName",
+            "columnName": "middleName",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastName",
+            "columnName": "lastName",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "phone",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lang",
+            "columnName": "lang",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gender",
+            "columnName": "gender",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "birthday",
+            "columnName": "birthday",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "bonusBalance",
+            "columnName": "bonusBalance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isEmailConfirmed",
+            "columnName": "isEmailConfirmed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isSchoolEmailConfirmed",
+            "columnName": "isSchoolEmailConfirmed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "emailConfirmationSentDate",
+            "columnName": "emailConfirmationSentDate",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "isPhoneConfirmed",
+            "columnName": "isPhoneConfirmed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phoneConfirmationSentDate",
+            "columnName": "phoneConfirmationSentDate",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "needChangePassword",
+            "columnName": "needChangePassword",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isAdmin",
+            "columnName": "isAdmin",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "concurrencyStamp",
+            "columnName": "concurrencyStamp",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "roles",
+            "columnName": "roles",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "school",
+            "columnName": "school",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "avatar",
+            "columnName": "avatar",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "session",
+            "columnName": "session",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chatUserData",
+            "columnName": "chatUserData",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tags",
+            "columnName": "tags",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "groups",
+            "columnName": "groups",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "leaderboard",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`place` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `score` INTEGER NOT NULL, `student` TEXT NOT NULL, `achievements` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "place",
+            "columnName": "place",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "score",
+            "columnName": "score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "student",
+            "columnName": "student",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "achievements",
+            "columnName": "achievements",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "place"
+          ]
+        }
+      },
+      {
+        "tableName": "achievements",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `title` TEXT, `description` TEXT, `systemImage` TEXT, `customCloudKey` TEXT NOT NULL, `type` TEXT NOT NULL, `subtype` TEXT, `imageType` TEXT NOT NULL, `gamificationStyle` TEXT NOT NULL, `systemAchievementId` TEXT, `imageCloudKey` TEXT NOT NULL, `points` INTEGER NOT NULL, `count` INTEGER NOT NULL, `achievedDate` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "systemImage",
+            "columnName": "systemImage",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "customCloudKey",
+            "columnName": "customCloudKey",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "subtype",
+            "columnName": "subtype",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "imageType",
+            "columnName": "imageType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gamificationStyle",
+            "columnName": "gamificationStyle",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "systemAchievementId",
+            "columnName": "systemAchievementId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "imageCloudKey",
+            "columnName": "imageCloudKey",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "points",
+            "columnName": "points",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count",
+            "columnName": "count",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "achievedDate",
+            "columnName": "achievedDate",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f613cb0860d39c1d5cae8c7b5d1c5bb8')"
+    ]
+  }
+}
